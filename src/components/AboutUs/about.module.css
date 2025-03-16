@@ -1,0 +1,23 @@
+.blog_stroke {
+  border: 1.5px solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    #474747 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background: linear-gradient(
+    182.29deg,
+    rgba(37, 46, 61, 0.2) 1.92%,
+    rgba(115, 115, 115, 0.02) 91.57%
+  );
+  width: 71px;
+  height: 71px;
+  top: 1500px;
+  left: 621px;
+  border-width: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
