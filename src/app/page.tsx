@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import HeroBg from "../components/HeroBg";
 import AboutUs from "../components/AboutUs/AboutUs";
+import FAQ from "../components/FAQ/FAQ";
 export default function Home() {
   return (
     <>
@@ -103,6 +104,7 @@ export default function Home() {
       </main>
       <Services />
       <AboutUs />
+      <FAQ />
     </>
   );
 }
