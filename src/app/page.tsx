@@ -4,6 +4,10 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import HeroBg from "../components/HeroBg";
 import AboutUs from "../components/AboutUs/AboutUs";
+import Joinus from "../components/JoinUs/Joinus";
+import Projects from "../components/Projects/Projects";
+import FAQ from "../components/FAQ/FAQ";
+import Blogs from "../components/Blogs/Blogs";
 export default function Home() {
   return (
     <>
@@ -103,6 +107,10 @@ export default function Home() {
       </main>
       <Services />
       <AboutUs />
+      <Blogs />
+      <Projects />
+      <Joinus />
+      <FAQ />
     </>
   );
 }

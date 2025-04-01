@@ -1,23 +1,26 @@
 .blog_stroke {
-  border: 1.5px solid;
-
-  border-image-source: linear-gradient(
-    180deg,
-    #474747 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  min-width: 71px;
+  min-height: 71px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(37, 46, 61, 1);
   background: linear-gradient(
     182.29deg,
     rgba(37, 46, 61, 0.2) 1.92%,
     rgba(115, 115, 115, 0.02) 91.57%
   );
-  width: 71px;
-  height: 71px;
-  top: 1500px;
-  left: 621px;
-  border-width: 1.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+}
+.second_blog_stroke {
+  border: 1.5px solid rgba(238, 85, 44, 0.2);
+
+  background: radial-gradient(
+    78.9% 132.98% at 50% -2.13%,
+    rgba(238, 85, 44, 0) 0.88%,
+    rgba(238, 85, 44, 0.0438349) 65.03%,
+    rgba(238, 85, 44, 0.5) 100%
+  );
 }
