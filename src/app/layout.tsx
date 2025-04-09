@@ -12,8 +12,10 @@ const plex = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "CodeQ | تعليم الشباب، تطوير المشاريع، بيئة عمل تعاونية - انضم الآن!",
-  description: "منصة تعليمية للشباب، ندعم مشاريعك الناشئة، ونوفر بيئة عمل تعاونية لتكتسب خبرات قبل إنطلاقك لسوق العمل . اكتشف فرصتك وسجل الآن!",
+  title:
+    "CodeQ | تعليم الشباب، تطوير المشاريع، بيئة عمل تعاونية - انضم الآن!",
+  description:
+    "منصة تعليمية للشباب، ندعم مشاريعك الناشئة، ونوفر بيئة عمل تعاونية لتكتسب خبرات قبل إنطلاقك لسوق العمل . اكتشف فرصتك وسجل الآن!",
 };
 
 export default function RootLayout({
@@ -23,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={`${plex.className}`}>
         <Header />
         {children}

@@ -15,10 +15,16 @@ export default function Projects() {
       </div>
       <h1
         className="text-center"
-        style={{ fontSize: "40px", fontWeight: "500", lineHeight: "172%" }}
+        style={{
+          color: "#BE4423",
+          fontSize: "40px",
+          fontWeight: "500",
+          lineHeight: "172%",
+        }}
       >
         مشاريعنا الرقمية المبتكرة
       </h1>
+      <hr className="border-0 d-none d-md-block my-4" />
       <p style={{ fontSize: "16px", fontWeight: "600" }}>
         نحن في CODEQ نؤمن بأن الإبداع والتقنية يسيران جنبًا إلى جنب. في هذا
         القسم، نعرض مجموعة من المشاريع التي تعكس شغفنا بالتطوير والابتكار، بدءًا

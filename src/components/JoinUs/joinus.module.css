@@ -14,3 +14,57 @@
   gap: 10px;
   border: none;
 }
+/* Styling for the container */
+.container {
+  margin: 0 auto;
+}
+
+/* Styling for the background section */
+.heroSection {
+  background-image: url("/images/join_us.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  height: 331px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the heading */
+.heading {
+  font-size: 20px;
+  color: #ef552c;
+  font-weight: 600;
+}
+
+/* Gradient text */
+.text {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 140%;
+  width: 956px;
+  background: linear-gradient(90deg, #ff6347, #ff4500);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Button styling */
+.button {
+  background-color: #ef552c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ff3b1f;
+}

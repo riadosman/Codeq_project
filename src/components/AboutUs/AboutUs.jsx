@@ -5,14 +5,18 @@ import styles from "./about.module.css";
 const AboutUs = () => {
   return (
     <div className="container my-5">
-      <h1 className="text-center">انضم إلينا وكن جزءًا من فريقنا !</h1>
-      <p className="text-center mx-auto" style={{ maxWidth: "922px" }}>
+      <h1 className="text-center" style={{ color: "#BE4423" }}>
+        انضم إلينا وكن جزءًا من فريقنا !
+      </h1>
+      <hr className="border-0 d-none d-md-block my-4" style={gradientLine} />
+
+      <p className="text-center mx-auto px-3" style={{ maxWidth: "922px" }}>
         نسعى دائمًا لتوسيع فريقنا وضم أشخاص مبدعين وطموحين يشاركونا رؤيتنا في
         تطوير مشاريع متميزة. سواء كنت ترغب في التطوع أو البحث عن فرصة عمل، فهناك
         دائمًا مكان لك معنا!
       </p>
 
-      <div className="row align-items-center mt-5">
+      <div className="row align-items-center mt-5 gy-4">
         {/* Image Section */}
         <div className="col-12 col-md-6 text-center">
           <Image
@@ -25,9 +29,9 @@ const AboutUs = () => {
         </div>
 
         {/* Text Content Section */}
-        <div className="col-12 col-md-6 d-flex flex-column gap-4 mt-4 mt-md-0">
-          {/* Volunteering Opportunity */}
-          <div className="d-flex gap-3 align-items-start flex-column flex-md-row">
+        <div className="col-12 col-md-6 d-flex flex-column gap-4">
+          {/* Block 1 */}
+          <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
             <div className={styles.blog_stroke}>01</div>
             <div>
               <p className="fw-bold fs-5">فرص التطوع</p>
@@ -38,27 +42,18 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <hr
-            className="border-0 d-none d-md-block"
-            style={{
-              height: "2px",
-              background:
-                "linear-gradient(270deg, rgba(0,0,0,0) -1.82%, #EF552C 59.71%, rgba(0,0,0,0) 111.4%)",
-            }}
-          />
 
-          {/* Job Opportunities */}
-          <div className="d-flex gap-3 align-items-start flex-column flex-md-row">
+          <hr className="border-0 d-none d-md-block" style={gradientLine} />
+
+          {/* Block 2 */}
+          <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
             <div
               className={`${styles.blog_stroke} ${styles.second_blog_stroke}`}
             >
               02
             </div>
             <div>
-              <p
-                className="fw-bold fs-5"
-                style={{ color: "rgba(239, 85, 44, 1)" }}
-              >
+              <p className="fw-bold fs-5" style={{ color: "#EF552C" }}>
                 الفرص الوظيفية المتاحة
               </p>
               <p className="text-secondary">
@@ -68,17 +63,11 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <hr
-            className="border-0 d-none d-md-block"
-            style={{
-              height: "2px",
-              background:
-                "linear-gradient(270deg, rgba(0,0,0,0) -1.82%, #EF552C 59.71%, rgba(0,0,0,0) 111.4%)",
-            }}
-          />
 
-          {/* Required Skills */}
-          <div className="d-flex gap-3 align-items-start flex-column flex-md-row">
+          <hr className="border-0 d-none d-md-block" style={gradientLine} />
+
+          {/* Block 3 */}
+          <div className="d-flex gap-3 align-items-start flex-column flex-md-row text-center text-md-end">
             <div className={styles.blog_stroke}>03</div>
             <div>
               <p className="fw-bold fs-5">المهارات المطلوبة</p>
@@ -93,6 +82,12 @@ const AboutUs = () => {
       </div>
     </div>
   );
+};
+
+const gradientLine = {
+  height: "2px",
+  background:
+    "linear-gradient(270deg, rgba(0,0,0,0) -1.82%, #EF552C 59.71%, rgba(0,0,0,0) 111.4%)",
 };
 
 export default AboutUs;

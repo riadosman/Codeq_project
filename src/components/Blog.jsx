@@ -1,7 +1,6 @@
 import Image from "next/image";
 import calender from "../../public/images/calender.png";
 import eye from "../../public/images/eye.png";
-
 import styles from "./styles.module.css";
 export default function Blog({ image, date, views, title, desc }) {
   return (
@@ -23,9 +22,9 @@ export default function Blog({ image, date, views, title, desc }) {
         </p>
         <p style={{ fontSize: "14px", fontWeight: "300" }}>{desc}</p>
         <button
+          className={styles.blog_btn}
           style={{
             border: "none",
-            backgroundColor: "transparent",
             color: "white",
             display: "flex",
             alignItems: "center",
