@@ -8,6 +8,7 @@ import Joinus from "../components/JoinUs/Joinus";
 import Projects from "../components/Projects/Projects";
 import FAQ from "../components/FAQ/FAQ";
 import Blogs from "../components/Blogs/Blogs";
+import FAQ from "../components/FAQ/FAQ";
 export default function Home() {
   return (
     <>
