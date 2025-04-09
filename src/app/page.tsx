@@ -10,6 +10,7 @@ import Gallery from "../components/Gallery/Gallery";
 import Blogs from "../components/Blogs/Blogs";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Hero from "../components/Hero/Hero";
+import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Services />
       <AboutUs />
+      <FAQ />
       <Blogs />
       <Projects />
       <Joinus />
