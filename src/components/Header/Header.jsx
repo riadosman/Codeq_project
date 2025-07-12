@@ -2,82 +2,115 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+
 export default function Header() {
-  const router = useRouter();
   return (
     <nav
-      className={`${styles.header_background} fixed-top navbar navbar-expand-lg mx-auto mt-3 `}
+      dir="rtl"
+      className={`${styles.header_background} navbar navbar-expand-lg fixed-top mt-3`}
       style={{
         width: "90%",
         borderRadius: "72px",
-        padding: "5px 10px",
-        heigth: "65px",
+        padding: "5px 20px",
+        margin: "0 auto",
       }}
     >
-      <div
-        className="d-flex align-items-center justify-content-between"
-        style={{ width: "95%", margin: "0 auto" }}
-      >
-        <Link href="/">
+      <div className="container-fluid">
+        <Link className="navbar-brand" href="/">
           <Image src="/images/logo.png" alt="logo" width={112} height={25} />
         </Link>
-        <div id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+        {/* Toggler Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            className="navbar-toggler-icon"
+            style={{ filter: "invert(1)" }}
+          ></span>
+        </button>
+
+        {/* Collapsible Menu */}
+        <div className="collapse navbar-collapse" id="mainNavbar">
+          <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0 gap-lg-2 gap-1">
             <li className="nav-item">
               <Link
-                className="nav-link active"
-                style={{ color: "#BE4423" }}
-                aria-current="page"
+                className={`nav-link ${styles.nav_link} active text-danger`}
                 href="/"
               >
                 الصفحة الرئيسية
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#about" className="nav-link text-white text-lg">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#about"
+              >
                 من نحن
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="#services" className="nav-link text-white text-lg">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#services"
+              >
                 خدماتنا
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#projects">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#projects"
+              >
                 المشاريع
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#gallery">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#gallery"
+              >
                 المعرض
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#blogs">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#blogs"
+              >
                 المدونة
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white text-lg" href="#join_us">
+              <Link
+                className={`nav-link ${styles.nav_link} text-white`}
+                href="#join_us"
+              >
                 انضم إلينا
-              </a>
+              </Link>
             </li>
           </ul>
+          <div className="d-flex mt-3 mt-lg-0">
+            <button
+              className={`btn btn-outline-light text-white ${styles.contact_btn}`}
+              style={{
+                borderRadius: "20px",
+                fontSize: "16px",
+                fontWeight: "400",
+                padding: "6px 24px",
+              }}
+              type="button"
+            >
+              تواصل معنا
+            </button>
+          </div>
         </div>
-        <button
-          className="btn btn-outline-white text-white border-white"
-          style={{
-            borderRadius: "20px",
-            fontSize: "16px",
-            fontWeight: "400",
-            padding: "6px 24px",
-          }}
-          type="submit"
-        >
-          تواصل معنا
-        </button>
       </div>
     </nav>
   );

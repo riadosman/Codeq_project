@@ -1,32 +1,36 @@
 .blog {
   background: rgba(37, 46, 61, 0.39);
-  border: 2px solid transparent; /* Set border to transparent to allow gradient */
+  border: 2px solid transparent;
   border-image-source: linear-gradient(
     0.31deg,
     #252e3d 2.64%,
     #adadad 59.29%,
     #252e3d 102.46%
   );
+  border-image-slice: 1;
   transition: all 0.3s ease;
-  border-image-slice: 1; /* Ensures the gradient is applied */
   overflow: hidden;
-  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
   border-radius: 10px;
+  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
+  width: 100%;
 }
+
 .blog:hover {
   transform: scale(1.05) rotate(1deg);
   border: 1.5px solid #ef552c;
 }
+
 @media (min-width: 768px) {
   .blog {
     width: 376px;
-    height: 426px;
   }
 }
+
 .blog_btn {
   background-color: transparent;
   transition: all 0.3s ease;
 }
+
 .blog_btn:hover {
   background-color: #ef552c;
 }

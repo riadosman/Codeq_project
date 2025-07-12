@@ -45,9 +45,8 @@ export default function FAQ() {
       <h1 className="text-center mb-5">الأسئلة الشائعة</h1>
 
       <div className="row align-items-center gy-4 ">
-
-      {/* القسم الأول: الصورة */}
-          <div className="col-lg-6  justify-content-center d-flex">
+        {/* القسم الأول: الصورة */}
+        <div className="col-lg-6  justify-content-center d-flex">
           <Image
             src="/images/aboutUs.png"
             alt="FAQ"
@@ -61,25 +60,43 @@ export default function FAQ() {
         <div className="col-lg-6">
           <div className="accordion " id="faqAccordion">
             {faqData.map((item, index) => (
-              <div className={`accordion-item bg-black border-0 mb-3 p-2 ${styles._div_a52ab2}`} key={index}>
-                <h2 className={`accordion-header d-flex align-items-center ${styles._header_a52ab2}`} onClick={() => toggleFAQ(index)} >
+              <div
+                className={`accordion-item bg-black border-0 mb-3 p-2 ${styles._div_a52ab2}`}
+                key={index}
+              >
+                <h2
+                  className={`accordion-header d-flex align-items-center ${styles._header_a52ab2}`}
+                  onClick={() => toggleFAQ(index)}
+                >
                   <button
-                    className={`accordion-button bg-black ${styles._button_a52ab2} ${styles.no_arrow}  ${openIndex === index ? "" : "collapsed"}`}
                     type="button"
+                    className={`accordion-button bg-black text-white ${
+                      styles._button_a52ab2
+                    } ${styles.no_arrow} ${
+                      openIndex === index ? "" : "collapsed"
+                    }`}
                     style={{ boxShadow: "none" }}
                   >
                     {item.question}
                   </button>
-                  <span className={styles.__span_a52ab2}  >{openIndex === index ? "-" : "+"}</span>
+
+                  {/* Custom +/- Icon */}
+                  <span className={styles.__span_a52ab2}>
+                    {openIndex === index ? "-" : "+"}
+                  </span>
                 </h2>
-                <div className={`accordion-collapse collapse ${openIndex === index ? "show" : ""}`}>
+
+                <div
+                  className={`accordion-collapse collapse ${
+                    openIndex === index ? "show" : ""
+                  }`}
+                >
                   <div className="accordion-body text-white">{item.answer}</div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

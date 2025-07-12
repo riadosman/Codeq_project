@@ -1,68 +1,62 @@
-.button {
-  box-shadow: 0px 0px 156px 0px #ee552cd6;
-  background-color: #ef552c;
-  color: white;
-  width: 221.7391357421875;
-  height: 44;
-  top: 4062px;
-  left: 616.84px;
-  border-radius: 24px;
-  padding-top: 11px;
-  padding-right: 18px;
-  padding-bottom: 11px;
-  padding-left: 18px;
-  gap: 10px;
-  border: none;
-}
-/* Styling for the container */
 .container {
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Styling for the background section */
+/* Hero Section */
 .heroSection {
   background-image: url("/images/join_us.png");
   background-position: top;
-  background-size: contain;
+  border-radius: 20px;
   background-repeat: no-repeat;
-  margin-top: 80px;
-  height: 331px;
+  width: 100%;
+  margin: 80px auto;
+  /* min-height: 300px; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
-
-/* Styling for the heading */
+@media screen and (min-width: 768px) {
+  .heroSection {
+    width: 80%;
+  }
+}
+/* Heading */
 .heading {
-  font-size: 20px;
+  font-size: 1.25rem; /* ~20px */
   color: #ef552c;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-/* Gradient text */
+/* Gradient Text */
 .text {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
   font-weight: 500;
-  line-height: 140%;
-  width: 956px;
+  line-height: 1.5;
   background: linear-gradient(90deg, #ff6347, #ff4500);
   -webkit-background-clip: text;
   color: transparent;
+  max-width: 900px;
+  margin-bottom: 2rem;
 }
 
-/* Button styling */
+/* Button */
 .button {
   background-color: #ef552c;
   color: white;
   border: none;
-  border-radius: 20px;
-  font-size: 16px;
+  border-radius: 24px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 10px 30px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 100px 0px #ee552cd6;
+  width: 90%;
 }
 
 .button:hover {

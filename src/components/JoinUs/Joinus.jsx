@@ -1,4 +1,5 @@
 import styles from "./joinus.module.css";
+import Image from "next/image";
 
 export default function JoinUs() {
   return (

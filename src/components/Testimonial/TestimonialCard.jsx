@@ -4,19 +4,7 @@ import img1 from "../../../public/images/customer.png";
 
 export default function TestimonialCard() {
   return (
-    <div
-      className={styles.testimonial}
-      style={{
-        minWidth: "1059px",
-        height: "364px",
-        backgroundColor: "#252E3D63",
-        borderRadius: "10px",
-        display: "flex",
-        alignItems: "center",
-        gap: "20px",
-        padding: "15px",
-      }}
-    >
+    <div className={styles.testimonial}>
       <Image
         src={img1}
         alt="customer"
@@ -25,6 +13,8 @@ export default function TestimonialCard() {
         style={{
           width: "269px",
           height: "336px",
+          objectFit: "cover",
+          zIndex: 2,
         }}
       />
       <div
@@ -33,9 +23,12 @@ export default function TestimonialCard() {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
+          zIndex: 2,
+          flex: 1,
         }}
       >
-        <div style={{ display: "flex", gap: "5px" }}>
+        {/* Stars */}
+        <div style={{ display: "flex", gap: "5px", justifyContent: "start" }}>
           {[...Array(5)].map((_, starIndex) => (
             <svg
               key={starIndex}
@@ -52,9 +45,13 @@ export default function TestimonialCard() {
             </svg>
           ))}
         </div>
+
+        {/* Name */}
         <p style={{ fontSize: "20px", fontWeight: "500" }}>
           نور الدين القحطاني
         </p>
+
+        {/* Testimonial */}
         <p
           style={{
             fontSize: "18px",
@@ -64,7 +61,7 @@ export default function TestimonialCard() {
         >
           "شركة CODEQ قدمت لي تجربة استثنائية! 🤩 جودة خدماتهم واهتمامهم
           بالتفاصيل يجعلهم الخيار الأول لأي مشروع. أشكر فريقهم الرائع على الدعم
-          المتواصل والاحترافية العالية! 💡👏"{" "}
+          المتواصل والاحترافية العالية! 💡👏"
         </p>
       </div>
     </div>

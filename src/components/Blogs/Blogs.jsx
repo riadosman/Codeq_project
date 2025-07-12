@@ -25,18 +25,23 @@ export default function Blogs() {
     },
   ];
   return (
-    <div>
+    <div className="container my-5">
       <h1 className="text-center">استكشف مقالاتنا وأحدث الأخبار</h1>
-      <div className="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-5">
+
+      <div className="row justify-content-center mt-5 g-4">
         {blogsContent.map((item, index) => (
-          <Blog
+          <div
             key={index}
-            date={item.date}
-            views={item.views}
-            title={item.title}
-            desc={item.desc}
-            image={item.image}
-          />
+            className="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center"
+          >
+            <Blog
+              date={item.date}
+              views={item.views}
+              title={item.title}
+              desc={item.desc}
+              image={item.image}
+            />
+          </div>
         ))}
       </div>
     </div>

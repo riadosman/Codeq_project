@@ -2,9 +2,17 @@
   position: relative;
   padding: 16px;
   border-radius: 12px;
-  background-color: white; /* Adjust if needed */
+  background-color: #252e3d63;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  /* width: 1000px; */
+  height: auto;
+  flex-wrap: wrap;
 }
 
+/* Gradient Border */
 .testimonial::before {
   content: "";
   position: absolute;
@@ -22,4 +30,24 @@
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Cursor on swiper */
+.swiper-wrapper {
+  cursor: grab;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .testimonial img {
+    width: 200px !important;
+    height: auto !important;
+  }
 }
