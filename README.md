@@ -1,36 +1,186 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Codeq Project
 
-## Getting Started
+Welcome to the official website of Codeq, an innovative educational platform designed to empower youth. Our platform offers a dynamic space where young individuals can learn, collaborate, and bring their startup ideas to life.
 
-First, run the development server:
+Through a modern, user-friendly interface, users can explore opportunities, join collaborative projects, and gain real-world experience — all before stepping into the job market.
+
+Built with scalability and simplicity in mind, the website allows seamless registration, project showcasing, and community interaction, ensuring a smooth journey from learning to launching.
+
+![App Screenshot](screenshots/main-screenshot.png)
+
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home-page.png)
+
+### Mobile View
+
+<img src="screenshots/mobile-view.png" alt="Mobile View" width="300">
+
+## Installation
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (version 16.0 or higher)
+- npm (version 8.0 or higher) or yarn (version 1.22 or higher)
+
+### Steps
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/riadosman/Codeq_project.git
+   ```
+
+2. Navigate to the project directory
+
+   ```bash
+   cd Codeq_project
+   ```
+
+3. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server
+
+   ```bash
+   npm start
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+## Usage
+
+### Development
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will open in development mode at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the project directory, you can run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── .next
+├── .vscode
+├── public
+├── screenshots
+├── src
+    ├── app
+    ├── vendor-chunks
+      ├── icon.png
+    ├── chunks
+    ├── css
+    ├── development
+    ├── media
+    ├── webpack
+      ├── app
+      ├── app
+    ├── app
+  ├── fonts
+  ├── images
+    ├── IBM_Plex_Sans_Arabic
+    ├── icons
+  ├── app
+  ├── components
+    ├── AboutUs
+    ├── Blogs
+    ├── FAQ
+    ├── Footer
+    ├── Gallery
+    ├── Header
+    ├── Hero
+    ├── JoinUs
+    ├── Projects
+    ├── Services
+    ├── Testimonial
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Configuration
+
+### Package.json Scripts
+
+Custom scripts you can add to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
+```
+
+## Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Testing
+
+```bash
+# Run tests
+npm test
+# or
+yarn test
+
+# Run tests with coverage
+npm test -- --coverage
+```
+
+## Built With
+
+- [React](https://reactjs.org/) - The web framework used
+- [Create React App](https://create-react-app.dev/) - React toolchain
+- [React Router](https://reactrouter.com/) - For routing (if used)
+- [Next js](https://nextjs.org/) - The React Framework for the Web
+
+## Contact
+
+Your Name - riyados973@gmail.com
+
+Project Link: [https://github.com/riadosman/Codeq_project](https://github.com/riadosman/Codeq_project)
